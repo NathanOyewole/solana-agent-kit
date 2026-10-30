@@ -19,8 +19,8 @@ export async function rampartSpend(
     programId,
     mockOracle,
     intent,
-    status: "intent_built",
+    status: "interface_only",
     note:
-      "Devnet only. Vault enforces destination allowlist, per-tx USD cap, per-epoch USD cap, and Pyth price band before lamports move.",
+      "Interface-only: builds the intent shape but does not submit on-chain. Real enforcement happens via the Rampart program (see PR #636 for verified refusal signature). Devnet only.",
   };
 }

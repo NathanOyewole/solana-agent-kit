@@ -15,7 +15,7 @@ const rampartSpendAction: Action = {
       {
         explanation: "Build a spend intent for a devnet Rampart vault.",
         input: { destination: "SomeBase58Pubkey", amountUsd: 10 },
-        output: { status: "intent_built" },
+        output: { status: "interface_only" },
       },
     ],
   ],
